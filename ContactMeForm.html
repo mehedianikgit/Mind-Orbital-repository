@@ -1,0 +1,29 @@
+<div id="contact-form">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <br>
+      <input type="submit" value="Submit" onclick="validateForm()">
+    </form>
+  </div>
+  
+  <script>
+    function validateForm() {
+      let name = document.querySelector("#name").value;
+      let email = document.querySelector("#email").value;
+      let message = document.querySelector("#message").value;
+      
+      if (name === "" || email === "" || message === "") {
+        alert("All fields are required!");
+        return false;
+      }
+      
+      alert("Form data is valid, submitting...");
+    }
+  </script>
+  
