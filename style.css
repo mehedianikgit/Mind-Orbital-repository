@@ -1,9 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 a {
     text-decoration: none;
@@ -62,3 +64,90 @@ nav{
 /* ---------main nav section end */
 
 /* ------------side bar start */
+main {
+    margin-top: 10px;
+    display: flex;
+}
+.cal_bar{
+    width: 20%;
+    border-top: 1px solid rgb(234, 229, 229);
+    border-right: 1px solid rgb(234, 229, 229);
+}
+.cal_div{
+    margin-bottom: 50px;
+}
+.month {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+.month ul li {
+    color: black;
+    font-size: 16px;
+}
+.weekdays {
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.weekdays li {
+    font-size: 12px;
+    display: inline;
+    color:black;
+    text-align: center;
+}
+  
+.days {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.days li {
+    display: inline;
+    font-size:12px;
+    color: #777;
+}
+  
+.days li .active {
+    padding: 5px;
+    border-radius: 50%;
+    background: #1abc9c;
+    color: white !important
+}
+.employees_div{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.employee_name_div{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.border{
+    border-bottom: 1px dashed gray;
+    margin-top: 20px;
+}
+.employees_div i{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #1abc9c;
+}
+.employees_name input{
+    margin: 10px 10px;
+    text-align: center;
+}
+.fa-angle-down{
+    margin-right: 10px;
+}
+.block{
+    height:100px;
+}
+/* left side end */
+/* right side start */
+
+.table_bar{
+    width: 80%;
+}
